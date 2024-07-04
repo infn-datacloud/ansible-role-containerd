@@ -3,9 +3,9 @@ dependencies: []
 
 galaxy_info:
   role_name: containerd
-  author: geerlingguy
+  author: fsinisi
   description: containerd.io for Linux.
-  company: "Midwestern Mac, LLC"
+  company: INFN
   license: "license (BSD, MIT)"
   min_ansible_version: 2.10
   platforms:
@@ -14,12 +14,9 @@ galaxy_info:
         - all
     - name: Debian
       versions:
-        - stretch
-        - buster
+        - bookworm
     - name: Ubuntu
       versions:
-        - xenial
-        - bionic
         - focal
   galaxy_tags:
     - system

@@ -58,5 +58,11 @@
     state: absent
   changed_when: false
 
+- name: Set correct endpoint for CRI
+  copy:
+    src: files/crictl.yaml
+    dest: /etc/crictl.yaml
+    mode: 0644
+
 - name: Ensure containerd is restarted immediately if necessary.
   meta: flush_handlers
